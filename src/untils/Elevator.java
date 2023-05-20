@@ -97,7 +97,7 @@ public class Elevator implements Runnable{
 
                 while(curRequests.contains(curFloor)){
                     System.out.printf("%s elevator took a passenger at the %d floor\n", numberOfElevator, curFloor);
-                    curRequests.remove(curFloor);
+                    curRequests.remove(Integer.valueOf(curFloor));
                 }
 
                 curFloor += step;
